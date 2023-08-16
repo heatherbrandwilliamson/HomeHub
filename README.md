@@ -4,53 +4,6 @@ Home Hub is a comprehensive social media application where users can create post
 
 The application is built with a React.js frontend, and an Express.js backend with a set of REST APIs.
 
-## Getting Started
-Prerequisites
-npm
-npm install npm@latest -g
-
-## cd frontend/
-npm install
-
-## cd api/
-npm install
-Install MongoDB
-
-brew tap mongodb/brew
-brew install mongodb-community@5.0
-Start MongoDB
-
-brew services start mongodb-community@5.0
-
-
-## Start
-Start the frontend server
-
-## cd frontend/
-npm start
-Start the backend server
-
-## cd api/
-JWT_SECRET=SUPER_SECRET npm start
-Browse to http://localhost:3000
-
-## Test
-Note the use of an environment variable for the JWT secret
-
-Start the server in test mode (so that it connects to the test DB)
-
-## cd api
-JWT_SECRET=SUPER_SECRET npm run start:test
-Run frontend tests
-
-## cd frontend/
-JWT_SECRET=SUPER_SECRET npm start
-JWT_SECRET=SUPER_SECRET npm run test
-Run backend tests
-
-## cd api/
-
-JWT_SECRET=SUPER_SECRET npm run test
 
 ## Technologies
 

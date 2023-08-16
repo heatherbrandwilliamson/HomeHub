@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Post from "../post/Post";
 import CreatePost from "../createPost/CreatePost";
 import "./Feed.css";
+import Footer from '../Footer/Footer';
 // import CreateLike from "../createLike/CreateLike";
 
 const Feed = ({ navigate }) => {

@@ -14,6 +14,7 @@ import Profile from "../profile/Profile";
 import Feed from "../feed/Feed";
 import "./navbar.css";
 import LogoImage from "./homehub-logo.png";
+import Footer from "../Footer/Footer";
 
 const logout = () => {
   window.localStorage.removeItem("token");
@@ -74,6 +75,9 @@ const App = () => {
             element={<Profile navigate={useNavigate()} />}
           />
         </Routes>
+      </div>
+      <div>
+      <Footer/>
       </div>
     </>
   );

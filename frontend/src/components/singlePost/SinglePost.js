@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Post from "../post/Post";
 import CreateComment from "../createComment/CreateComment";
 import Comment from "./Comment";
-import CreateLike from "../createLike/CreateLike";
+// import CreateLike from "../createLike/CreateLike";
 import "../../index.css";
 
 const SinglePost = ({ navigate }) => {

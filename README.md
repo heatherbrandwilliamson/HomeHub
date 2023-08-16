@@ -1,6 +1,8 @@
-# Nex Social
+Home Hub - Social Media Application
 
-In this project, you are tasked with working on an existing application. A significant part of the challenge will be to familiarise yourself with the codebase you've inherited, as you work to **improve and extend** it.
+Home Hub is a comprehensive social media application where users can create posts about projects, like and comment on posts, manage their profile, and receive notifications.
+
+The application is built with a React.js frontend, and an Express.js backend with a set of REST APIs.
 
 ## Getting Started
 Prerequisites

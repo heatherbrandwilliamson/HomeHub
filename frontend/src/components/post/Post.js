@@ -3,7 +3,7 @@ import "./Post.css";
 import CreateLike from "../createLike/CreateLike";
 import { Link } from "react-router-dom";
 
-const formatDate = (date) => {
+const FormatDate = (date) => {
   const options = {
     year: "numeric",
     month: "short",
@@ -22,7 +22,7 @@ const Post = ({ post, handleRefresh }) => {
               <img
                 className="feed-profile-photo"
                 src={`/profilePhotos/${post.user.photo}`}
-                alt="Profile photo"
+                alt="User profile picture"
               />
             </a>
           )}
@@ -30,7 +30,7 @@ const Post = ({ post, handleRefresh }) => {
           <a href={"/users/" + post.user._id}>{post.user.username}</a>
         </div>
 
-        <div className="post-date">{formatDate(post.created_at)}</div>
+        <div className="post-date">{FormatDate(post.created_at)}</div>
       </div>
 
       <div className="post-content">

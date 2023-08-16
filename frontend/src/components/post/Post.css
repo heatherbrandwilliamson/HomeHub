@@ -5,6 +5,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
   color: #000;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .post-header {
@@ -53,8 +54,8 @@
 }
 
 .likes-count {
-  font-weight: bold;
-  color: #f21847;
+  font-family: 'Montserrat', sans-serif;
+  color: #6b6b6b;
 }
 
 .post-footer {

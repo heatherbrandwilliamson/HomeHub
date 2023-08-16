@@ -36,9 +36,9 @@ const LogInForm = () => {
     setPassword(event.target.value);
   };
 
-  const handleForgotPassword = () => {
-    navigate("/forgot-password");
-  };
+  // const handleForgotPassword = () => {
+  //   navigate("/forgot-password");
+  // };
 
   const handleCreateAccount = () => {
     navigate("/signup");
@@ -47,7 +47,7 @@ const LogInForm = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <h1>Welcome to Acebook</h1>
+        <h1>Welcome to Home Hub</h1>
         <div className="form-container">
           <form onSubmit={handleSubmit} className="form">
             <input

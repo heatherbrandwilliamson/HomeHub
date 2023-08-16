@@ -47,7 +47,7 @@ const CreatePost = ({ handleRefresh }) => {
 
   return (
     <>
-      <h3>What&rsquo;s on your mind?</h3>
+      <h3>Share news about your renovation?</h3>
       <form
         className="form"
         onSubmit={handleSubmit}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   useNavigate,
   Routes,
@@ -13,7 +13,7 @@ import SinglePost from "../singlePost/SinglePost";
 import Profile from "../profile/Profile";
 import Feed from "../feed/Feed";
 import "./navbar.css";
-import LogoImage from "./acebook-logo.png";
+import LogoImage from "./homehub-logo.png";
 
 const logout = () => {
   window.localStorage.removeItem("token");
@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="/posts">
-        <img src={LogoImage} className="logo" />
+        <img src={LogoImage} className="logo" alt="Home Hub Logo" />
       </a>
       <ul className="nav-links">
         <li>

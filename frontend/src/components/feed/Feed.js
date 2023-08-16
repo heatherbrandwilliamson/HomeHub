@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Post from "../post/Post";
 import CreatePost from "../createPost/CreatePost";
 import "./Feed.css";
-import CreateLike from "../createLike/CreateLike";
+// import CreateLike from "../createLike/CreateLike";
 
 const Feed = ({ navigate }) => {
   const [posts, setPosts] = useState([]);
@@ -26,10 +26,10 @@ const Feed = ({ navigate }) => {
     }
   }, [refreshFeed]);
 
-  const logout = () => {
-    window.localStorage.removeItem("token");
-    navigate("/login");
-  };
+  // const logout = () => {
+  //   window.localStorage.removeItem("token");
+  //   navigate("/login");
+  // };
 
   const handleRefresh = () => {
     setRefreshFeed(true); // Trigger the refresh action
@@ -41,10 +41,14 @@ const Feed = ({ navigate }) => {
         <div role="feed" className="feed-posts">
           <div className="new-post">
             <CreatePost handleRefresh={handleRefresh} />
-          </div>
-          {posts.map((post) => (
-            <Post post={post} key={post._id} handleRefresh={handleRefresh} />
-          ))}
+            </div>
+          {posts.length === 0 ? (
+            <p>No posts yet. Start by creating a post!</p>
+          ) : (
+            posts.map((post) => (
+              <Post post={post} key={post._id} handleRefresh={handleRefresh} />
+            ))
+          )}
         </div>
       </div>
     );

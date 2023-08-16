@@ -1,8 +1,10 @@
+@import './MontserratFont.css';
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: start;
-  background-color: #166fe5;
+  background-color: #F6F6F6;
   padding: 10px;
 }
 
@@ -19,7 +21,8 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: #6b6b6b;
   padding: 5px 10px;
   border-radius: 3px;
 }
@@ -29,5 +32,5 @@
 }
 
 .logo {
-  width: 75px;
+  width: 250px;
 }

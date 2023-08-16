@@ -1,4 +1,4 @@
-Home Hub - Social Media Application
+# Home Hub - Social Media Application
 
 Home Hub is a comprehensive social media application where users can create posts about projects, like and comment on posts, manage their profile, and receive notifications.
 

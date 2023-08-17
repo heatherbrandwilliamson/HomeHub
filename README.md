@@ -1,10 +1,10 @@
-# Home Hub - Social Media Application
+# Home Hub 
+
+![Login](/public/images/Login.png)
 
 Home Hub is a comprehensive social media application where users can create posts about projects, like and comment on posts, manage their profile, and receive notifications.
 
 The application is built with a React.js frontend, and an Express.js backend with a set of REST APIs.
-
-![Login](/public/images/Login.png)
 
 
 ## Technologies

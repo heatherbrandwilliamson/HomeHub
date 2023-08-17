@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import LogoSearch from '../app/LogoSearch';
 import "./LoginForm.css";
+import LogoImage from "../app/homehub-logo.png";
 
 const LogInForm = () => {
   const navigate = useNavigate();
@@ -45,9 +46,11 @@ const LogInForm = () => {
   };
 
   return (
-    <div className="wrapper">
-      <div className="container">
-        <h1>Welcome to Home Hub</h1>
+    <div>
+      <div className="button-container">
+        <div>
+        <img src={LogoImage} className="logo" alt="Home Hub Logo" />
+        <h1 className="h1-title">Login</h1>
         <div className="form-container">
           <form onSubmit={handleSubmit} className="form">
             <input
@@ -72,13 +75,15 @@ const LogInForm = () => {
               role="submit-button"
               id="submit"
               type="submit"
-              value="Submit"
+              value="SUBMIT"
               className="submit-button"
             />
-          </form>
-          <button className="sign-up-button" onClick={handleCreateAccount}>
-            Not a user? Sign up here
+            <button className="sign-up-button" onClick={handleCreateAccount}>
+            I DONT HAVE AN ACCOUNT
           </button>
+          <h2 className="h2-title">Forgotton password?</h2>
+          </form>
+        </div>
         </div>
       </div>
     </div>

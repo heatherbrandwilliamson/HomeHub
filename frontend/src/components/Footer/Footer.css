@@ -4,10 +4,11 @@
     font-family: 'Montserrat', sans-serif;
     padding: 5px;
     text-align: center;
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    
-    
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    font-size: 10pt;
+
   }
   

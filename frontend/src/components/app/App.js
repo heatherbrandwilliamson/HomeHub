@@ -49,7 +49,7 @@ const App = () => {
 
   return (
     <>
-      {location.pathname !== "/login" && <Navbar />}
+      {location.pathname !== "/login" && location.pathname !== "/signup" && <Navbar />}
       <div className="main-container">
         <Routes>
           <Route

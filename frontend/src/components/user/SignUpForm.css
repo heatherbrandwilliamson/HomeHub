@@ -2,3 +2,46 @@
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 20px;
 }
+
+
+.form-signup{
+  background-color: #F6F6F6;
+  width: 500px;
+  height: auto;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: .6rem;
+  border: 1px solid #b6b5b5;
+
+}
+
+.choose-file-button {
+  background-color: #b6b5b5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.file-input-label {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Hide the actual file input */
+.file-input {
+  display: none;
+}
+
+.no-file-text {
+  font-family: 'Montserrat', sans-serif; /* Set your desired font-family */
+  font-size: 14px; /* Set your desired font-size */
+  color: #999; /* Set your desired color */
+  margin-top: 5px;
+}

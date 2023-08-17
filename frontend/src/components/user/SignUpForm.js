@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignUpForm.css";
+import LogoImage from "../app/homehub-logo.png";
 
 const SignUpForm = ({ navigate }) => {
   const [username, setUsername] = useState("");
@@ -49,11 +50,13 @@ const SignUpForm = ({ navigate }) => {
   };
 
   return (
-    <div className="container">
-      <h1>Sign up</h1>
+    <div className="button-container">
+      <div>
+      <img src={LogoImage} className="logo" alt="Home Hub Logo" />
+      <h1 className="h1-title">Sign up</h1>
       <div className="form-container">
         <form
-          className="form"
+          className="form-signup"
           onSubmit={handleSubmit}
           encType="multipart/form-data"
         >
@@ -74,7 +77,7 @@ const SignUpForm = ({ navigate }) => {
             onChange={handleEmailChange}
             className="input"
             required
-          />
+          /> 
           <input
             placeholder="Password"
             id="password"
@@ -85,7 +88,10 @@ const SignUpForm = ({ navigate }) => {
             required
           />
           Add a profile photo &nbsp;
-          <input id="photo" type="file" onChange={handleFileChange} />
+          <input id="photo" type="file" onChange={handleFileChange} /><br></br>
+          <span className="no-file-text">
+        {file ? file.name : "No file chosen"}
+      </span>
           <br />
           <br />
           <input
@@ -96,6 +102,7 @@ const SignUpForm = ({ navigate }) => {
             className="submit-button"
           />
         </form>
+        </div>
       </div>
     </div>
   );

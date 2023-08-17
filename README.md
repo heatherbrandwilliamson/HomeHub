@@ -64,4 +64,3 @@ This application is comprised of two distinct pieces.
   ; npm start
   ```
 
-You should now be able to open your browser and go to `http://localhost:3000/signup` to create a new user.

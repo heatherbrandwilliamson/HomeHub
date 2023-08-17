@@ -4,7 +4,7 @@ Home Hub is a comprehensive social media application where users can create post
 
 The application is built with a React.js frontend, and an Express.js backend with a set of REST APIs.
 
-![Alt Text](https://github.com/heatherbrandwilliamson/HomeHub/tree/main/frontend/public/Login.png)
+![Login](/public/images/Login.png)
 
 
 ## Technologies
